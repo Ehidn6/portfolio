@@ -1,0 +1,23 @@
+body {
+    background-color: #222222;
+}
+
+#clickButton {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: #2b4c43 20px solid;
+    background-color: #4bcdab;
+    transition: all 0.2s ease;
+}
+
+#clickButton:hover {
+    background-color: #2b4c43;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+#clickButton:active {
+    background-color: #2b4c43;
+    transform: scale(0.9);
+}

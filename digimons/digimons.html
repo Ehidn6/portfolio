@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Моя первая игра</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="gameContainer">
+            <div id="scoreContainer">
+                <h1>Счет: <span id="score">0</span></h1>
+            </div>
+            <button id="clickButton">Клик!</button>
+        </div>
+        <script>
+            let clickButton = document.getElementById("clickButton");
+            let scoreDisplay = document.getElementById("score");
+            let score = 0;
+
+            function updateScore() {
+                score = score + 1;
+                scoreDisplay.textContent = score;
+            }
+            clickButton.addEventListener("click", updateScore);
+        </script>
+    </body>
+</html>
